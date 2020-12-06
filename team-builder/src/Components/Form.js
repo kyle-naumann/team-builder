@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 
 function AddForm(props) {
     const {names, setNames} = props;
     const [person, setPerson] = useState({ name: ""})
+
 
     const handleChange = (event => {
         setPerson({ ...person, [event.target.name]: event.target.value });
@@ -14,6 +16,7 @@ function AddForm(props) {
 };
 
 return (
+    
     <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name</label>
         <input

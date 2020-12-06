@@ -9,7 +9,7 @@ function App() {
   const [names, setNames] = useState(people);
 
   const AppDiv = styled.div`
-    display; flex;
+    display: flex;
     flex-wrap: wrap;
     `;
 
